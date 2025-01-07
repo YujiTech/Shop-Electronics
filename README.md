@@ -3,4 +3,4 @@
 
 Electronics is a fully responsive Shop-Electronics website, <br />Responsive for all devices, built using HTML, CSS, and JavaScript.
 
-<a href="https://YujiTech.github.io/gamex/"><strong>➥ Live Demo</strong></a>
+<a href="https://yujitech.github.io/Shop-Electronics/"><strong>➥ Live Demo</strong></a>  
