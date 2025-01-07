@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-SHOP</title>
+    <link rel="shortcut icon" href="logo/Logo-E.png" type="image/x-icon">
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+    <!-- link font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link aos animetion -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- link csss -->
+     <link rel="stylesheet" href="style/responsive.css">
+     <link rel="stylesheet" href="style/benner.css">
+     <link rel="stylesheet" href="style/style.css">
+  </head>
+<body class="back-main ">
+    <!-- navbar -->
+    <div class="container-fluid p-0 ">
+        <nav id="navbar "  class="navbar navbar-expand-lg  fixed-top shadow bg-light">
+            <div class="container py-2 py-md-4 ">
+                    <div class="col-lg-4 ">
+                        <a href="" class="navbar-brand d-flex align-items-center">
+                            <img src="logo/Logo-E.png" alt="" style="width: 40px;">
+                        <h3 class="mx-2 text-uppercase fw-bold m-0 p-0 font-righteous " style="color: #bf1db4";>E-shop</h3>
+                        </a>
+                    </div>
+                    <button class="navbar-toggler justify-content-end shadow-none border-0 text-dark" type="button" >
+                          <ul class="navbar-nav  font-righteous d-flex align-items-center me-4">
+                            <li><a id="lights" href="#" class=" fs-3 text-dark">
+                              <i class="fa fa-adjust" aria-hidden="true"></i>
+                            </a></li>
+                            <li><a id="darks" class="d-none " href="#" >
+                              <i class="fa fa-cog fs-3 text-dark" aria-hidden="true"></i>
+                            </a></li>
+                          </ul>
+                    </button>
+                    <button class="navbar-toggler justify-content-end shadow-none border-0 text-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#navofcanvas">
+                          <i class="bi bi-list fs-1"></i>
+                    </button>
+                   
+                    <div class="col-lg-8 collapse navbar-collapse justify-content-end ps-5">
+                      <ul class="navbar-nav  font-righteous d-flex align-items-center">
+                          <li><a id="light" href="#" class=" fs-3 me-4 text-dark">
+                            <i class="fa fa-adjust" aria-hidden="true"></i>
+                          </a></li>
+                          <li><a id="dark" class="d-none me-4 " href="#" >
+                            <i class="fa fa-cog fs-3 text-dark" aria-hidden="true"></i>
+                          </a></li>
+                            <li><a href="#" class="nav-link text-hover mx-lg-3 mx-0 px-2 fs-5 text-dark active">Home</a></li>
+                            <li><a href="#about" class="nav-link text-hover mx-lg-4 mx-0 px-2 fs-5 text-dark">About</a></li>
+                            <li><a href="#product" class="nav-link text-hover mx-lg-4 mx-0 px-2 fs-5 text-dark">Products</a></li>
+                            <li><a href="#service" class="nav-link text-hover mx-lg-4 mx-0 px-2 fs-5 text-dark">Services</a></li>
+                            <li><a href="#" class="nav-link text-hover mx-lg-2 mx-0 px-2 fs-5 text-dark">
+                              <i class="fa-solid fa-bag-shopping"></i>
+                              </a>
+                            </li>
+                            <li><a href="#" class="nav-link text-hover mx-lg-2 mx-0 px-2 fs-5 text-dark">
+                              <i class="fa-regular fa-heart"></i>
+                              </a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </nav>
+    </div>
+    <!-- ofcanvas -->
+    <div class="container-fluid ">
+      <div class="offcanvas offcanvas-end w-50 pb-2 " id="navofcanvas" data-bs-scroll="true">
+            <div class="offcanvas-header border-bottom pb-3 pt-4 shadow" >
+                <div class="offcanvas-title d-flex align-items-center py-md-3" >
+                    <img src="logo/Logo-E.png" alt="" style="width: 40px;">
+                    <h3 class="mx-2  m-0 fw-bold font-righteous text-uppercase" style="color: #bf1db4";>E-shop</h3>
+                </div>
+                
+              <button type="button" class="btn-close shadow-none bg-light rounded-5 " data-bs-dismiss="offcanvas" ></button>
+            </div>
+            <div class="offcanvas-body font-righteous">
+                <div class="row">
+                    <div class="col-6">
+                          <ul class="navbar-nav">
+                            <li><a href="#" class="nav-link text-hover mx-lg-3 mx-0 px-2 fs-5 text-dark active">Home</a></li>
+                            <li><a href="#about" class="nav-link text-hover mx-lg-3 mx-0 px-2 fs-5 text-secondary">About</a></li>   
+                          </ul>
+                    </div>
+                    <div class="col-6">
+                          <ul class="navbar-nav ">
+                            <li><a href="#product" class="nav-link text-hover mx-lg-3 mx-0 px-2 fs-5 text-secondary">Products</a></li>
+                            <li><a href="#service" class="nav-link text-hover mx-lg-3 mx-0 px-2 fs-5 text-secondary">Services</a></li>
+                            
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-12 ">
+                      <ul class="navbar-nav ">
+                      <li class="d-flex "><a href="#Contact" class="nav-link text-hover mx-lg-2 mx-0 px-2 fs-5 text-dark">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        </a>
+                      <a href="#Contact" class="nav-link text-hover mx-lg-2 mx-0 px-2 fs-5 text-dark">
+                        <i class="fa-regular fa-heart"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="px-1 py-2 border-bottom">
+                    <form action="" class="d-flex align-items-center border mb-3 px-2">
+                      <i class="bi bi-search fs-4"></i>
+                      <input
+                        type="text"
+                        class="form-control shadow-none border-0"
+                        placeholder="Search..."
+                      />
+                      <span>Ctrl+k</span>
+                    </form>
+                  </div>
+                  <div class="dropdown mt-2 ms-2 ">
+                    <button
+                      class="btn  text-dark dropdown-toggle bg-success-subtle"
+                      type="button"
+                      data-bs-toggle="dropdown" 
+                    "
+                    >
+                      <i class="bi bi-person-circle mb-3 px-2 Landscape In Rupp University"></i>Account
+                    </button>
+                    <ul class="dropdown-menu bg-success-subtle" >
+                      <li>
+                        <a class="dropdown-item text-hover text-dark" href="Login.html" target="_blank"
+                          >Sign In</a
+                        >
+                      </li>
+                      <li><a class="dropdown-item text-hover text-dark" href="#">Sign Out</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!-- main -->
+      <div class="container-fluid p-0" >
+      <!-- benner -->
+        <div class="container benner" >
+            <div class="row  rounded-1 p-2  p-md-5 benner-h" style=" background-color:#e8effc;">
+                <div class="col-12 col-md-12 col-lg-6  ps-lg-5 d-flex align-items-center ">
+                    <div class="acticle">
+                        <h4 class="font-righteous text-dark">My Profile</h4>
+                        <h1 class="fw-bold font-righteous text-dark">Wireless <span class="auto-type"></span></h1>
+                        <p class="fs-5  py-md-3 text-limit text-dark">Thank you for your visiting of my shop, enjoy.. Thank you</p>
+                        <button class="btn btn-primary col-5 col-lg-3 py-2  fs-6 font-righteous">Shop Now</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 pe-md-5 pt-md-5 pt-lg-0 ">
+                  <div class=" ps-md-5 benner-image-h" >
+                    <div class="h-100 p-5" style=" border-radius: 50%; background-color: #8fb1f0;" >
+                      <img  class="w-100 h-100 benner-image " src="image/image.png" alt="">
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div id="about" class="container-fluid p-0 ">
+        <!-- Categories -->
+            <div class="container "  data-aos="fade-up"
+              data-aos-eseing="ease-in-out" data-aos-delay="300"> 
+                  <div class="pt-5">
+                    <h2 class="font-righteous ";><span class="text-primary">
+                      <i class="fa-solid fa-bolt"></i>
+                    </span>
+                    Categories</h2>
+                  </div>
+                  <div class="row py-3 px-4 px-md-0">
+                      <div class="col-12 col-md-6 col-lg-4 p-3">
+                          <div class="card-hover d-flex shadow ">
+                                <div class="card-image p-2 rounded-3" style=" background-color: #8fb1f0;">
+                                    <img class="h-100 w-100 " src="image/Categorie-1.png" alt="">
+                              </div>
+                              <div class="px-5 py-4 rounded-3 w-100  text-dark" style="background-color: #e8effc;" >
+                                    <h5 class="m-0 font-righteous">ALL</h5>
+                                    <p class="m-0">50items</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4 p-3">
+                          <div class="card-hover d-flex shadow ">
+                                <div class="card-image p-2 rounded-3" style=" background-color: #8fb1f0;">
+                                    <img class="h-100 w-100 " src="image/Categorie-2.webp" alt="">
+                              </div>
+                              <div class="px-5 py-4 rounded-3 w-100 text-dark" style="background-color: #e8effc;">
+                                    <h5 class="m-0 font-righteous">Headphones</h5>
+                                    <p class="m-0">10 items</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4 p-3">
+                          <div class="card-hover d-flex shadow ">
+                                <div class="card-image p-2 rounded-3" style=" background-color: #8fb1f0;">
+                                    <img class="h-100 w-100 " src="image/Categorie-3.png" alt="">
+                              </div>
+                              <div class="px-5 py-4 rounded-3 w-100 text-dark" style="background-color: #e8effc;">
+                                    <h5 class="m-0 font-righteous">Smartwatch</h5>
+                                    <p class="m-0">22 items</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4 p-3">
+                          <div class="card-hover d-flex shadow ">
+                                <div class="card-image p-2 rounded-3" style=" background-color: #8fb1f0;">
+                                    <img class="h-100 w-100 " src="image/Categorie-4.png" alt="">
+                              </div>
+                              <div class="px-5 py-4 rounded-3 w-100 text-dark" style="background-color: #e8effc;">
+                                    <h5 class="m-0 font-righteous">Phone</h5>
+                                    <p class="m-0">22 items</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4 p-3">
+                          <div class="card-hover d-flex shadow ">
+                                <div class="card-image p-2 rounded-3" style=" background-color: #8fb1f0;">
+                                    <img class="h-100 w-100 " src="image/Categorie-5.png" alt="">
+                              </div>
+                              <div class="px-5 py-4 rounded-3 w-100 text-dark" style="background-color: #e8effc;">
+                                    <h5 class="m-0 font-righteous">Tablet</h5>
+                                    <p class="m-0">22 items</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4 p-3">
+                          <div class="card-hover d-flex shadow ">
+                                <div class="card-image p-2 rounded-3" style=" background-color: #8fb1f0;">
+                                    <img class="h-100 w-100 " src="image/Categorie-6.png" alt="">
+                              </div>
+                              <div class="px-5 py-4 rounded-3 w-100 text-dark" style="background-color: #e8effc;">
+                                    <h5 class="m-0 font-righteous">Laptop</h5>
+                                    <p class="m-0">22 items</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+            </div>
+            <!-- All Electronic -->
+            <div id="product" class="container p-2 p-md-0 p-lg-4 "  data-aos="fade-up"
+            data-aos-eseing="ease-in-out" data-aos-delay="300">
+                <div class="pt-3">
+                  <h2 class="font-righteous " ><span class="text-warning">
+                    <i class="fa-solid fa-bolt"></i>
+                  </span>
+                  All Electronics</h2>
+                </div>
+              <h1 class="font-righteous ">Explore Best Sellers</h1>
+              <div class="d-flex justify-content-start p-5 px-3 px-md-3  overflow-x-scroll">
+                  <div class="rounded-3 overflow-hidden card-hover col-6 col-md-3 col-lg-2  me-3 me-md-3 me-lg-1 me-xl-5 shadow ">
+                        <div class="card p-2 position-relative overflow-hidden" style="background-color: #7aa0e783; height: 205px;">
+                            <div class="position-absolute" >
+                                <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                  <i class="fa-regular fa-heart "></i>
+                                </div>
+                            </div>
+                            <img class="image-product" src="image/Electronics-1.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body p-3 bg-light"  >
+                            <h5 class="card-title text-dark font-righteous">Navy Headphones</h5>
+                            <p class="card-text text-dark">85.99$</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                  </div>
+                  <div class="rounded-3 overflow-hidden card-hover col-6 col-md-3 col-lg-2 me-3 me-md-3 me-lg-3 me-xl-5 shadow">
+                        <div class="card p-2 position-relative" style="background-color: #7aa0e783; height: 205px;">
+                            <div class="position-absolute" >
+                              <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                <i class="fa-regular fa-heart "></i>
+                              </div>
+                            </div>
+                            <img class="image-product" src="image/Electronics-2.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body p-3 bg-light"  >
+                            <h5 class="card-title text-dark font-righteous">Turquoise laptop</h5>
+                            <p class="card-text text-dark">1149.99$</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                  </div>
+                  <div class="rounded-3 overflow-hidden card-hover col-6 col-md-3 col-lg-2 me-3 me-md-3 me-lg-3 me-xl-5 shadow">
+                        <div class="card p-2 position-relative" style="background-color: #7aa0e783; height: 205px;">
+                            <div class="position-absolute" >
+                              <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                <i class="fa-regular fa-heart "></i>
+                              </div>
+                            </div>
+                            <img class="image-product" src="image/Electronics-3.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body p-3 bg-light "  >
+                            <h5 class="card-title text-dark font-righteous">Iphone 15 pro max</h5>
+                            <p class="card-text text-dark">1399.99$</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                  </div>
+                  <div class="rounded-3 overflow-hidden card-hover col-6 col-md-3 col-lg-2 me-3 me-md-3 me-lg-3 me-xl-5 shadow">
+                        <div class="card p-2 position-relative" style="background-color: #7aa0e783; height: 205px;">
+                            <div class="position-absolute" >
+                              <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                <i class="fa-regular fa-heart "></i>
+                              </div>
+                            </div>
+                            <img class="image-product" src="image/Electronics-4.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body p-3 bg-light"  >
+                            <h5 class="card-title text-dark font-righteous">tablet Samsung</h5>
+                            <p class="card-text text-dark">225.99$</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                  </div>
+                  <div class="rounded-3 overflow-hidden  card-hover col-6 col-md-3 col-lg-2 me-3 me-md-3 me-lg-3 me-xl-5 shadow">
+                        <div class="card p-2 position-relative" style="background-color: #7aa0e783; height: 205px;">
+                            <div class="position-absolute" >
+                              <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                <i class="fa-regular fa-heart "></i>
+                              </div>
+                            </div>
+                            <img class="image-product" src="image/Electronics-5.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body p-3 bg-light"  >
+                            <h5 class="card-title text-dark font-righteous">Smartwatch News</h5>
+                            <p class="card-text text-dark">79.99$</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                  </div>
+                  <div class="rounded-3 overflow-hidden card-hover col-6 col-md-3 col-lg-2 me-1 shadow">
+                        <div class="card p-2 position-relative" style="background-color: #7aa0e783; height: 205px;">
+                            <div class="position-absolute" >
+                              <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                <i class="fa-regular fa-heart "></i>
+                              </div>
+                            </div>
+                            <img class="image-product" src="image/Electronics-6.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body p-3 bg-light"  >
+                            <h5 class="card-title text-dark font-righteous">Desktop gaming</h5>
+                            <p class="card-text text-dark">5500.99$</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                  </div>
+              </div>
+            </div>
+            <!-- about headphone -->
+            <div  class="container p-2 p-md-0 p-lg-4  "  data-aos="fade-up"
+            data-aos-eseing="ease-in-out" data-aos-delay="300">
+                <div class="pt-3">
+                  <h2 class="font-righteous " ><span class="text-warning">
+                    <i class="fa-solid fa-bolt"></i>
+                  </span>
+                  Headphones</h2>
+                </div>
+              <h1 class="font-righteous ">Discover Our Headphones</h1>
+              <div class="d-flex justify-content-start p-5 px-3 px-md-3  overflow-x-scroll">
+                  <div class="rounded-3 overflow-hidden card-hover col-6 col-md-3 col-lg-2  me-3 me-md-3 me-lg-1 me-xl-5 shadow ">
+                        <div class="card p-2 position-relative overflow-hidden" style="background-color: #7aa0e783; height: 205px;">
+                            <div class="position-absolute" >
+                                <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                  <i class="fa-regular fa-heart "></i>
+                                </div>
+                            </div>
+                            <img class="image-product" src="image/head-1.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body p-3 bg-light"  >
+                            <h5 class="card-title text-dark font-righteous">Navy Headphones</h5>
+                            <p class="card-text text-dark">99.99$</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                  </div>
+                  <div class="rounded-3 overflow-hidden card-hover col-6 col-md-3 col-lg-2 me-3 me-md-3 me-lg-3 me-xl-5 shadow">
+                        <div class="card p-2 position-relative" style="background-color: #7aa0e783; height: 205px;">
+                            <div class="position-absolute" >
+                              <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                <i class="fa-regular fa-heart "></i>
+                              </div>
+                            </div>
+                            <img class="image-product" src="image/head-2.webp" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body p-3 bg-light"  >
+                            <h5 class="card-title text-dark font-righteous">Navy Headphones</h5>
+                            <p class="card-text text-dark">99.99$</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                  </div>
+                  <div class="rounded-3 overflow-hidden card-hover col-6 col-md-3 col-lg-2 me-3 me-md-3 me-lg-3 me-xl-5 shadow">
+                        <div class="card p-2 position-relative" style="background-color: #7aa0e783; height: 205px;">
+                            <div class="position-absolute" >
+                              <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                <i class="fa-regular fa-heart "></i>
+                              </div>
+                            </div>
+                            <img class="image-product" src="image/head-3.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body p-3 bg-light "  >
+                            <h5 class="card-title text-dark font-righteous">Navy Headphones</h5>
+                            <p class="card-text text-dark">99.99$</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                  </div>
+                  <div class="rounded-3 overflow-hidden card-hover col-6 col-md-3 col-lg-2 me-3 me-md-3 me-lg-3 me-xl-5 shadow">
+                        <div class="card p-2 position-relative" style="background-color: #7aa0e783; height: 205px;">
+                            <div class="position-absolute" >
+                              <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                <i class="fa-regular fa-heart "></i>
+                              </div>
+                            </div>
+                            <img class="image-product" src="image/head-4.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body p-3 bg-light"  >
+                            <h5 class="card-title text-dark font-righteous">Navy Headphones</h5>
+                            <p class="card-text text-dark">99.99$</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                  </div>
+                  <div class="rounded-3 overflow-hidden  card-hover col-6 col-md-3 col-lg-2 me-3 me-md-3 me-lg-3 me-xl-5 shadow">
+                        <div class="card p-2 position-relative" style="background-color: #7aa0e783; height: 205px;">
+                            <div class="position-absolute" >
+                              <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                <i class="fa-regular fa-heart "></i>
+                              </div>
+                            </div>
+                            <img class="image-product" src="image/head-5.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body p-3 bg-light"  >
+                            <h5 class="card-title text-dark font-righteous">Navy Headphones</h5>
+                            <p class="card-text text-dark">99.99$</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                  </div>
+                  <div class="rounded-3 overflow-hidden card-hover col-6 col-md-3 col-lg-2 me-1 shadow">
+                        <div class="card p-2 position-relative" style="background-color: #7aa0e783; height: 205px;">
+                            <div class="position-absolute" >
+                              <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                <i class="fa-regular fa-heart "></i>
+                              </div>
+                            </div>
+                            <img class="image-product" src="image/head-6.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body p-3 bg-light"  >
+                            <h5 class="card-title text-dark font-righteous">Navy Headphones</h5>
+                            <p class="card-text text-dark">99.99$</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                  </div>
+              </div>
+            </div>
+          <!-- About Smart Watch  -->
+            <div class="container-fluid bg-light p-0 my-5">
+              <div class="container p-0 p-md-0 p-lg-5 ">
+                  <div class="row shadow p-4 p-md-3 p-lg-5">
+                      <div class="col-12 col-md-6 p-0"  style="height: 500px;">
+                            <div class="w-100 h-100 p-1 pe-3 pe-md-4 p-lg-4 rounded-5" style="background-color:#e8effc;"" >
+                                <img class="w-100 h-100 benner-image" src="image/about-smart.png" alt="">
+                            </div>
+                      </div>
+                      <div class="col-12 col-md-6 p-0"  style="height: 500px;">
+                            <div class="p-5 p-md-4 p-lg-5 " >
+                              <div class="pt-4 pt-md-5 pt-lg-5">
+                                <h2 class="font-righteous text-dark py-2" ><span class="text-primary">
+                                  <i class="fa-solid fa-bolt"></i>
+                                </span>
+                                New Collection</h2>
+                              </div>
+                            <h1 class="font-righteous text-dark">Explore The World Of Advanced Handwear</h1>
+                            <p class="py-2 text-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio unde suscipit eaque voluptatum ducimus laborum numquam quam nihil incidunt facilis quae </p>
+                            <button class="btn btn-primary col-5 col-md-6 col-lg-4 py-2 py-md-2 py-lg-2 font-righteous">Shop Now</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="container p-2 p-md-0 p-lg-4  "  data-aos="fade-up"
+                data-aos-eseing="ease-in-out" data-aos-delay="300">
+                <div class="pt-3">
+                  <h2 class="font-righteous " ><span class="text-warning">
+                    <i class="fa-solid fa-bolt"></i>
+                  </span>
+                  Smartwatch</h2>
+                </div>
+                <h1 class="font-righteous ">New Handwear Collection</h1>
+            <div class="d-flex justify-content-start p-5 px-3 px-md-3  overflow-x-scroll">
+                <div class="rounded-3 overflow-hidden card-hover col-6 col-md-3 col-lg-2  me-3 me-md-3 me-lg-1 me-xl-5 shadow ">
+                      <div class="card p-2 position-relative overflow-hidden" style="background-color: #7aa0e783; height: 205px;">
+                          <div class="position-absolute" >
+                              <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                <i class="fa-regular fa-heart "></i>
+                              </div>
+                          </div>
+                          <img class="image-product" src="image/Smart-1.png" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body p-3 bg-light"  >
+                          <h5 class="card-title text-dark font-righteous">Peac Smartwatch</h5>
+                          <p class="card-text text-dark">99.99$</p>
+                          <button class="btn btn-primary">Add to Cart</button>
+                      </div>
+                </div>
+                <div class="rounded-3 overflow-hidden card-hover col-6 col-md-3 col-lg-2 me-3 me-md-3 me-lg-3 me-xl-5 shadow">
+                      <div class="card p-2 position-relative" style="background-color: #7aa0e783; height: 205px;">
+                          <div class="position-absolute" >
+                            <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                              <i class="fa-regular fa-heart "></i>
+                            </div>
+                          </div>
+                          <img class="image-product" src="image/Smart-2.png" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body p-3 bg-light"  >
+                          <h5 class="card-title text-dark font-righteous">Bear Smartwatch</h5>
+                          <p class="card-text text-dark">99.99$</p>
+                          <button class="btn btn-primary">Add to Cart</button>
+                      </div>
+                </div>
+                <div class="rounded-3 overflow-hidden card-hover col-6 col-md-3 col-lg-2 me-3 me-md-3 me-lg-3 me-xl-5 shadow">
+                      <div class="card p-2 position-relative" style="background-color: #7aa0e783; height: 205px;">
+                          <div class="position-absolute" >
+                            <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                              <i class="fa-regular fa-heart "></i>
+                            </div>
+                          </div>
+                          <img class="image-product" src="image/Smart-3.png" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body p-3 bg-light "  >
+                          <h5 class="card-title text-dark font-righteous">Beige Smartwatch</h5>
+                          <p class="card-text text-dark">99.99$</p>
+                          <button class="btn btn-primary">Add to Cart</button>
+                      </div>
+                </div>
+                <div class="rounded-3 overflow-hidden card-hover col-6 col-md-3 col-lg-2 me-3 me-md-3 me-lg-3 me-xl-5 shadow">
+                      <div class="card p-2 position-relative" style="background-color: #7aa0e783; height: 205px;">
+                          <div class="position-absolute" >
+                            <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                              <i class="fa-regular fa-heart "></i>
+                            </div>
+                          </div>
+                          <img class="image-product" src="image/Smart-4.png" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body p-3 bg-light"  >
+                          <h5 class="card-title text-dark font-righteous">Black headphones</h5>
+                          <p class="card-text text-dark">99.99$</p>
+                          <button class="btn btn-primary">Add to Cart</button>
+                      </div>
+                </div>
+                <div class="rounded-3 overflow-hidden  card-hover col-6 col-md-3 col-lg-2 me-3 me-md-3 me-lg-3 me-xl-5 shadow">
+                      <div class="card p-2 position-relative" style="background-color: #7aa0e783; height: 205px;">
+                          <div class="position-absolute" >
+                            <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                              <i class="fa-regular fa-heart "></i>
+                            </div>
+                          </div>
+                          <img class="image-product" src="image/Smart-5.png" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body p-3 bg-light"  >
+                          <h5 class="card-title text-dark font-righteous">Band Smartwatch</h5>
+                          <p class="card-text text-dark">99.99$</p>
+                          <button class="btn btn-primary">Add to Cart</button>
+                      </div>
+                </div>
+                <div class="rounded-3 overflow-hidden card-hover col-6 col-md-3 col-lg-2 me-1 shadow">
+                      <div class="card p-4 position-relative" style="background-color: #7aa0e783; height: 205px;">
+                          <div class="position-absolute" >
+                            <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                              <i class="fa-regular fa-heart "></i>
+                            </div>
+                          </div>
+                          <img class="image-product" src="https://www.fireboltt.com/cdn/shop/products/17_1080x.png?v=1638005393" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body p-3 bg-light"  >
+                          <h5 class="card-title text-dark font-righteous">Red Smartwatch</h5>
+                          <p class="card-text text-dark">99.99$</p>
+                          <button class="btn btn-primary">Add to Cart</button>
+                      </div>
+                </div>
+            </div>
+            </div>
+            <!-- About Phone -->
+            <div class="container p-2 p-md-0 p-lg-4  "  data-aos="fade-up"
+              data-aos-eseing="ease-in-out" data-aos-delay="300">
+                  <div class="pt-3">
+                    <h2 class="font-righteous" ><span class="text-warning">
+                      <i class="fa-solid fa-bolt"></i>
+                    </span>
+                    Mobile</h2>
+                  </div>
+                <h1 class="font-righteous">Discover Our Mobiles</h1>
+                <div class="d-flex justify-content-start p-5 px-3 px-md-3  overflow-x-scroll">
+                    <div class="rounded-3 overflow-hidden card-hover col-6 col-md-3 col-lg-2  me-3 me-md-3 me-lg-1 me-xl-5 shadow ">
+                          <div class="card p-2 position-relative overflow-hidden" style="background-color: #7aa0e783; height: 205px;">
+                              <div class="position-absolute" >
+                                  <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                    <i class="fa-regular fa-heart "></i>
+                                  </div>
+                              </div>
+                              <img class="image-product" src="image/iphone-1.png" class="card-img-top" alt="...">
+                          </div>
+                          <div class="card-body p-3 bg-light"  >
+                              <h5 class="card-title text-dark font-righteous">Iphone 16 pro max</h5>
+                              <p class="card-text text-dark">1299.99$</p>
+                              <button class="btn btn-primary">Add to Cart</button>
+                          </div>
+                    </div>
+                    <div class="rounded-3 overflow-hidden card-hover col-6 col-md-3 col-lg-2 me-3 me-md-3 me-lg-3 me-xl-5 shadow">
+                          <div class="card p-2  position-relative" style="background-color: #7aa0e783; height: 205px;">
+                              <div class="position-absolute" >
+                                <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                  <i class="fa-regular fa-heart "></i>
+                                </div>
+                              </div>
+                              <img class="image-product" src="image/iphone-2.png" class="card-img-top" alt="...">
+                          </div>
+                          <div class="card-body p-3 bg-light"  >
+                              <h5 class="card-title text-dark font-righteous">Iphone 16 pro max</h5>
+                              <p class="card-text text-dark">1299.99$</p>
+                              <button class="btn btn-primary">Add to Cart</button>
+                          </div>
+                    </div>
+                    <div class="rounded-3 overflow-hidden card-hover col-6 col-md-3 col-lg-2 me-3 me-md-3 me-lg-3 me-xl-5 shadow">
+                          <div class="card p-2 position-relative" style="background-color: #7aa0e783; height: 205px;">
+                              <div class="position-absolute" >
+                                <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                  <i class="fa-regular fa-heart "></i>
+                                </div>
+                              </div>
+                              <img class="p-2" class="image-product" src="image/iphone-3.png" class="card-img-top" alt="...">
+                          </div>
+                          <div class="card-body p-3 bg-light "  >
+                              <h5 class="card-title text-dark font-righteous">Iphone 16 pro max</h5>
+                              <p class="card-text text-dark">1299.99$</p>
+                              <button class="btn btn-primary">Add to Cart</button>
+                          </div>
+                    </div>
+                    <div class="rounded-3 overflow-hidden card-hover col-6 col-md-3 col-lg-2 me-3 me-md-3 me-lg-3 me-xl-5 shadow">
+                          <div class="card p-2 position-relative" style="background-color: #7aa0e783; height: 205px;">
+                              <div class="position-absolute" >
+                                <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                  <i class="fa-regular fa-heart "></i>
+                                </div>
+                              </div>
+                              <img class="image-product" src="image/Electronics-3.png" class="card-img-top" alt="...">
+                          </div>
+                          <div class="card-body p-3 bg-light"  >
+                              <h5 class="card-title text-dark font-righteous">Iphone 15 pro max</h5>
+                              <p class="card-text text-dark">999.99$</p>
+                              <button class="btn btn-primary">Add to Cart</button>
+                          </div>
+                    </div>
+                    <div class="rounded-3 overflow-hidden  card-hover col-6 col-md-3 col-lg-2 me-3 me-md-3 me-lg-3 me-xl-5 shadow">
+                          <div class="card p-2 position-relative" style="background-color: #7aa0e783; height: 205px;">
+                              <div class="position-absolute" >
+                                <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                  <i class="fa-regular fa-heart "></i>
+                                </div>
+                              </div>
+                              <img class="image-product" src="image/iphone-5.png" class="card-img-top" alt="...">
+                          </div>
+                          <div class="card-body p-3 bg-light"  >
+                              <h5 class="card-title text-dark font-righteous">Iphone 14 pro max</h5>
+                              <p class="card-text text-dark">899.99$</p>
+                              <button class="btn btn-primary">Add to Cart</button>
+                          </div>
+                    </div>
+                    <div class="rounded-3 overflow-hidden card-hover col-6 col-md-3 col-lg-2 me-1 shadow">
+                          <div class="card p-2 position-relative" style="background-color: #7aa0e783; height: 205px;">
+                              <div class="position-absolute" >
+                                <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                  <i class="fa-regular fa-heart "></i>
+                                </div>
+                              </div>
+                              <img class="image-product" src="image/iphone-6.png" class="card-img-top" alt="...">
+                          </div>
+                          <div class="card-body p-3 bg-light"  >
+                              <h5 class="card-title text-dark font-righteous">Iphone 14 pro max</h5>
+                              <p class="card-text text-dark">899.99$</p>
+                              <button class="btn btn-primary">Add to Cart</button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <!-- About Smart phone -->
+            <div class="container-fluid bg-light p-0 my-5 ">
+              <div class="container p-0  p-md-0 p-lg-5 ">
+                  <div class="row shadow p-4 p-md-3 p-lg-5">
+                      <div class="col-12 col-md-6 p-0"  style="height: 500px;">
+                            <div class="w-100 h-100 p-1 p-md-3 p-lg-4 rounded-5" style="background-color:#e8effc;"" >
+                                <img class="w-100 h-100 benner-image" src="https://pngimg.com/d/iphone16_PNG35.png"alt="">
+                            </div>
+                      </div>
+                      <div class="col-12 col-md-6 p-0"  style="height: 500px;">
+                            <div class="p-5 p-md-4 p-lg-5 " >
+                              <div class="pt-5 pt-md-5 pt-lg-5">
+                                <h2 class="font-righteous text-dark py-2" ><span class="text-primary">
+                                  <i class="fa-solid fa-bolt"></i>
+                                </span>
+                                Summer Collection</h2>
+                              </div>
+                            <h1 class="font-righteous text-dark">Relish The Flavour Of Fresh Warmth</h1>
+                            <p class="py-2 text-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio unde suscipit eaque voluptatum ducimus laborum numquam quam nihil incidunt facilis quae </p>
+                            <button class="btn btn-primary col-5 col-md-6 col-lg-4 py-2 py-md-2 py-lg-2  fs-6 font-righteous">Shop Now</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <!-- About Tablet -->
+            <div class="container p-2 p-md-0 p-lg-4  "  data-aos="fade-up"
+              data-aos-eseing="ease-in-out" data-aos-delay="300">
+                  <div class="pt-3">
+                    <h2 class="font-righteous" ><span class="text-warning">
+                      <i class="fa-solid fa-bolt"></i>
+                    </span>
+                    Tablet</h2>
+                  </div>
+                <h1 class="font-righteous">Explore Our Tablets</h1>
+                <div class="d-flex justify-content-start p-5 px-3 px-md-3  overflow-x-scroll">
+                    <div class="rounded-3 overflow-hidden card-hover col-6 col-md-3 col-lg-2  me-3 me-md-3 me-lg-1 me-xl-5 shadow ">
+                          <div class="card p-2 position-relative overflow-hidden" style="background-color: #7aa0e783; height: 205px;">
+                              <div class="position-absolute" >
+                                  <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                    <i class="fa-regular fa-heart "></i>
+                                  </div>
+                              </div>
+                              <img class="image-product" src="https://bmsmena.com/cdn/shop/files/SM-X710NZAEMEA-000-001_37e8f67b-e14d-4ff8-a221-773f60b6f567.png?v=1698316690" class="card-img-top" alt="...">
+                          </div>
+                          <div class="card-body p-3 bg-light"  >
+                              <h5 class="card-title text-dark font-righteous">Samsung Tablet</h5>
+                              <p class="card-text text-dark">779.99$</p>
+                              <button class="btn btn-primary">Add to Cart</button>
+                          </div>
+                    </div>
+                    <div class="rounded-3 overflow-hidden card-hover col-6 col-md-3 col-lg-2 me-3 me-md-3 me-lg-3 me-xl-5 shadow">
+                          <div class="card p-2  position-relative" style="background-color: #7aa0e783; height: 205px;">
+                              <div class="position-absolute" >
+                                <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                  <i class="fa-regular fa-heart "></i>
+                                </div>
+                              </div>
+                              <img class="image-product" src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1696518238/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/275405_0_cxmvdy.png" class="card-img-top" alt="...">
+                          </div>
+                          <div class="card-body p-3 bg-light"  >
+                              <h5 class="card-title text-dark font-righteous">Samsung Tablet</h5>
+                              <p class="card-text text-dark">779.99$</p>
+                              <button class="btn btn-primary">Add to Cart</button>
+                          </div>
+                    </div>
+                    <div class="rounded-3 overflow-hidden card-hover col-6 col-md-3 col-lg-2 me-3 me-md-3 me-lg-3 me-xl-5 shadow">
+                          <div class="card p-2 position-relative" style="background-color: #7aa0e783; height: 205px;">
+                              <div class="position-absolute" >
+                                <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                  <i class="fa-regular fa-heart "></i>
+                                </div>
+                              </div>
+                              <img class="py-4" class="image-product" src="https://images.samsung.com/is/image/samsung/p6pim/latin_en/sm-x910nzaagto/gallery/latin-en-galaxy-tab-s9-ultra-wifi-x910-sm-x910nzaagto-537945662?$650_519_PNG$" class="card-img-top" alt="...">
+                          </div>
+                          <div class="card-body p-3 bg-light "  >
+                              <h5 class="card-title text-dark font-righteous">Samsung Tablet</h5>
+                              <p class="card-text text-dark">779.99$</p>
+                              <button class="btn btn-primary">Add to Cart</button>
+                          </div>
+                    </div>
+                    <div class="rounded-3 overflow-hidden card-hover col-6 col-md-3 col-lg-2 me-3 me-md-3 me-lg-3 me-xl-5 shadow">
+                          <div class="card p-2 position-relative" style="background-color: #7aa0e783; height: 205px;">
+                              <div class="position-absolute" >
+                                <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                  <i class="fa-regular fa-heart "></i>
+                                </div>
+                              </div>
+                              <img class="py-4" class="image-product" src="https://www.janado.de/cdn/shop/products/Samsung-Galaxy-Tab-A8-10-5-LTE-SM-X205-pink-pn.png?v=1704261686" class="card-img-top" alt="...">
+                          </div>
+                          <div class="card-body p-3 bg-light"  >
+                              <h5 class="card-title text-dark font-righteous">Samsung Tablet</h5>
+                              <p class="card-text text-dark">779.99$</p>
+                              <button class="btn btn-primary">Add to Cart</button>
+                          </div>
+                    </div>
+                    <div class="rounded-3 overflow-hidden  card-hover col-6 col-md-3 col-lg-2 me-3 me-md-3 me-lg-3 me-xl-5 shadow">
+                          <div class="card p-2 position-relative" style="background-color: #7aa0e783; height: 205px;">
+                              <div class="position-absolute" >
+                                <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                  <i class="fa-regular fa-heart "></i>
+                                </div>
+                              </div>
+                              <img class="p-2" class="image-product" src="https://www.facilitea.com/on/demandware.static/-/Sites-promocaixa-m-catalog/default/dw7647c5a3/electronica/121-4007357/121-4007357_4_600x600.png" class="card-img-top" alt="...">
+                          </div>
+                          <div class="card-body p-3 bg-light"  >
+                              <h5 class="card-title text-dark font-righteous">Samsung Tablet</h5>
+                              <p class="card-text text-dark">779.99$</p>
+                              <button class="btn btn-primary">Add to Cart</button>
+                          </div>
+                    </div>
+                    <div class="rounded-3 overflow-hidden card-hover col-6 col-md-3 col-lg-2 me-1 shadow">
+                          <div class="card p-2 position-relative" style="background-color: #7aa0e783; height: 205px;">
+                              <div class="position-absolute" >
+                                <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                  <i class="fa-regular fa-heart "></i>
+                                </div>
+                              </div>
+                              <img class="p-1" class="image-product" src="https://www.nairomarket.co.ke/cdn/shop/files/S6afaa71bccf443e7be7e4bbd22ea4baeJ.webp?v=1720377317&width=1445" class="card-img-top" alt="...">
+                          </div>
+                          <div class="card-body p-3 bg-light"  >
+                              <h5 class="card-title text-dark font-righteous">Samsung Tablet</h5>
+                              <p class="card-text text-dark">779.99$</p>
+                              <button class="btn btn-primary">Add to Cart</button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <!-- About Labtop -->
+            <div class="container p-2 p-md-0 p-lg-4 pb-5  "  data-aos="fade-up"
+              data-aos-eseing="ease-in-out" data-aos-delay="300">
+                  <div class="pt-3">
+                    <h2 class="font-righteous" ><span class="text-warning">
+                      <i class="fa-solid fa-bolt"></i>
+                    </span>
+                    Laptop</h2>
+                  </div>
+                <h1 class="font-righteous">Browse Through Our Laptops</h1>
+                <div class="d-flex justify-content-start p-5 px-3 px-md-3  overflow-x-scroll">
+                    <div class="rounded-3 overflow-hidden card-hover col-6 col-md-3 col-lg-2  me-3 me-md-3 me-lg-1 me-xl-5 shadow ">
+                          <div class="card p-2 position-relative overflow-hidden" style="background-color: #7aa0e783; height: 205px;">
+                              <div class="position-absolute" >
+                                  <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                    <i class="fa-regular fa-heart "></i>
+                                  </div>
+                              </div>
+                              <img class="image-product" src="image/Laptop-1.png" class="card-img-top" alt="...">
+                          </div>
+                          <div class="card-body p-3 bg-light"  >
+                              <h5 class="card-title text-dark font-righteous">ROG Strix Gaming</h5>
+                              <p class="card-text text-dark">1.899.99$</p>
+                              <button class="btn btn-primary">Add to Cart</button>
+                          </div>
+                    </div>
+                    <div class="rounded-3 overflow-hidden card-hover col-6 col-md-3 col-lg-2 me-3 me-md-3 me-lg-3 me-xl-5 shadow">
+                          <div class="card p-2  position-relative" style="background-color: #7aa0e783; height: 205px;">
+                              <div class="position-absolute" >
+                                <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                  <i class="fa-regular fa-heart "></i>
+                                </div>
+                              </div>
+                              <img class="image-product" src="image//Laptop-2.png" class="card-img-top" alt="...">
+                          </div>
+                          <div class="card-body p-3 bg-light"  >
+                              <h5 class="card-title text-dark font-righteous">Vivobook | Laptop</h5>
+                              <p class="card-text text-dark">779.99$</p>
+                              <button class="btn btn-primary">Add to Cart</button>
+                          </div>
+                    </div>
+                    <div class="rounded-3 overflow-hidden card-hover col-6 col-md-3 col-lg-2 me-3 me-md-3 me-lg-3 me-xl-5 shadow">
+                          <div class="card p-2 position-relative" style="background-color: #7aa0e783; height: 205px;">
+                              <div class="position-absolute" >
+                                <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                  <i class="fa-regular fa-heart "></i>
+                                </div>
+                              </div>
+                              <img  class="image-product" src="image/Laptop-3.png " class="card-img-top" alt="...">
+                          </div>
+                          <div class="card-body p-3 bg-light "  >
+                              <h5 class="card-title text-dark font-righteous">Asus Tuf Gaming</h5>
+                              <p class="card-text text-dark">1.799.99$</p>
+                              <button class="btn btn-primary">Add to Cart</button>
+                          </div>
+                    </div>
+                    <div class="rounded-3 overflow-hidden card-hover col-6 col-md-3 col-lg-2 me-3 me-md-3 me-lg-3 me-xl-5 shadow">
+                          <div class="card p-2 position-relative" style="background-color: #7aa0e783; height: 205px;">
+                              <div class="position-absolute" >
+                                <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                  <i class="fa-regular fa-heart "></i>
+                                </div>
+                              </div>
+                              <img class="image-product" src="image/Laptop-4.png" class="card-img-top" alt="...">
+                          </div>
+                          <div class="card-body p-3 bg-light"  >
+                              <h5 class="card-title text-dark font-righteous">Dell Laptop News</h5>
+                              <p class="card-text text-dark">2.199.99$</p>
+                              <button class="btn btn-primary">Add to Cart</button>
+                          </div>
+                    </div>
+                    <div class="rounded-3 overflow-hidden  card-hover col-6 col-md-3 col-lg-2 me-3 me-md-3 me-lg-3 me-xl-5 shadow">
+                          <div class="card p-2 position-relative" style="background-color: #7aa0e783; height: 205px;">
+                              <div class="position-absolute" >
+                                <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                  <i class="fa-regular fa-heart "></i>
+                                </div>
+                              </div>
+                              <img class="p-1" class="image-product" src="https://ipowerresale.com/cdn/shop/files/media_b46ec7ab-f504-4f1e-87a3-431d547ab05b.png?v=1731622225" class="card-img-top" alt="...">
+                          </div>
+                          <div class="card-body p-3 bg-light"  >
+                              <h5 class="card-title text-dark font-righteous">Apple Macbook</h5>
+                              <p class="card-text text-dark">1,299.99$</p>
+                              <button class="btn btn-primary">Add to Cart</button>
+                          </div>
+                    </div>
+                    <div class="rounded-3 overflow-hidden card-hover col-6 col-md-3 col-lg-2 me-1 shadow">
+                          <div class="card p-2 position-relative" style="background-color: #7aa0e783; height: 205px;">
+                              <div class="position-absolute" >
+                                <div class="bg-light rounded-5 icon-hover p-1 d-flex justify-content-center align-items-center" style="height: 30px; width: 30px;">
+                                  <i class="fa-regular fa-heart "></i>
+                                </div>
+                              </div>
+                              <img class="p-3" class="image-product" src="https://p4-ofp.static.pub//fes/cms/2024/05/02/s0gyehwmcoajrvlzxe6y5m0xt3pjmf087366.png" class="card-img-top" alt="...">
+                          </div>
+                          <div class="card-body p-3 bg-light"  >
+                              <h5 class="card-title text-dark font-righteous">ThinkPad of P14s </h5>
+                              <p class="card-text text-dark">1,299.99$</p>
+                              <button class="btn btn-primary">Add to Cart</button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+     </div>
+     <footer id="service" class="pt-5 " style="background-color: #78beff;">
+      <div class="container">
+          <a href="" class="navbar-brand d-flex align-items-center justify-content-center ">
+                <img src="logo/Logo-E.png" alt="" style="width: 40px;">
+                <h1 class="mx-2 text-uppercase fw-bold m-0 p-0 font-righteous " style="color: #bf1db4";>E-shop</h1>
+          </a>
+          <div class="row pt-5 ">
+            <div class="col-md-3 h-text col-12 px-4">
+                <h6 class="text-uppercase font-righteous text-light  "><i class="fa-solid fa-house me-3 "></i>COMPUNY NAME</h6>
+                <div class="py-4">
+                    <p class="text-light  font-squada">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora dolor alias dicta enim eveniet obcaecati, voluptatem maiores ratione eos iste!</p>
+                </div>
+            </div>
+            <div class="col-md-3 h-text col-12 px-4">
+                <h6 class="text-uppercase font-righteous text-light  ">Products</h6>
+                <div class="py-4">
+                    <ul class="navbar-nav font-squada">
+                        <li><a class="nav-link text-light  pt-0" href="#">Headphone</a></li>
+                        <li><a class="nav-link text-light " href="#">Phone</a></li>
+                        <li><a class="nav-link text-light " href="#">Smart Watch</a></li>
+                        <li><a class="nav-link text-light " href="#">Tablet</a></li>
+                        <li><a class="nav-link text-light " href="#">Laptop</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 h-text col-12 px-4">
+                <h6 class="text-uppercase font-righteous text-light  ">Useful Links</h6>
+                <div class="py-4">
+                    <ul class="navbar-nav font-squada">
+                        <li><a class="nav-link text-light  pt-0" href="#">Pricing</a></li>
+                        <li><a class="nav-link text-light " href="#">Settings</a></li>
+                        <li><a class="nav-link text-light " href="#">Orders</a></li>
+                        <li><a class="nav-link text-light " href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 h-text col-12 px-4">
+                <h6 class="text-uppercase font-righteous text-light  ">Contact</h6>
+                <div class="py-4">
+                    <ul class="navbar-nav font-squada">
+                        <li><a class="nav-link text-light  pt-0" href="#"><i class="fa-solid fa-house me-3 "></i>Phnom penh of Cambodia</a></li>
+                        <li><a class="nav-link text-light " href="#"><i class="fa-solid fa-envelope me-3"></i>https://www.exmple.com</a></li>
+                        <li><a class="nav-link text-light " href="#"><i class="fa-solid fa-phone me-3"></i>+ 123 456 789</a></li>
+                        <li><a class="nav-link text-light " href="#"><i class="fa-solid fa-mobile-screen-button me-3"></i>+ 123 456 789</a></li>    
+                    </ul>
+                </div>
+            </div>
+          </div>
+      </div>
+      <div class="container-fluid   p-0 font-righteous px-4 py-2" style="background-color: #518eff;">
+        <h1  class="fs-6 text-center m-0 text-light  py-5 " style=" letter-spacing: 2px;">
+            Copyright @2024 All rights reserved | This template is made by <span class="sans-serif text-warning fw-bold thiv" style="letter-spacing: 2px;"></span>
+        </h1>
+        </div>
+    </div>
+     </footer>
+</body>
+<script src="js/index.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12?fbclid=IwY2xjawFwVaRleHRuA2FlbQIxMAABHeJ8NPxpuUluvD5NUmA0Tvsq1PT5WepPIo3x1wglWc0p1KQJk3XhLP_1yQ_aem_6BW4iUjVsOAjuuZ37nFuFw"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+      });
+      var typed = new Typed('.auto-type', {
+          
+          strings: ['Headphones'],
+          typeSpeed: 130,
+          backSpeed: 130,
+          loop: true,
+        });
+      var typed = new Typed('.thiv', {
+          
+          strings: ['YujiTech Coding', 'YujiTech Developers'],
+          typeSpeed: 130,
+          backSpeed: 130,
+          loop: true,
+        });
+      
+    </script>
+</html>

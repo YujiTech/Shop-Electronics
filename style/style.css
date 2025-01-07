@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Oleo+Script:wght@400;700&family=SUSE:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&family=Squada+One&display=swap');
+.font-squada{
+    font-family: "Squada One", sans-serif;
+}
+.font-righteous{
+    font-family: "Righteous", sans-serif;
+}
+.font-lobster{
+    font-family: "Lobster", sans-serif;
+}
+.font-Oleo{
+    font-family: "Oleo Script", system-ui;
+}
+.acticle p{
+    font-size: clamp(12px, 3.4vw, 18px);
+  }
+.acticle h1{
+    font-size: clamp(25px, 3.5vw, 100px);
+  }
+html{
+    scroll-behavior: smooth;
+}

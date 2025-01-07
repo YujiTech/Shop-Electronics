@@ -1,0 +1,43 @@
+.benner-image:hover {
+    animation: rotate .5s linear infinite;
+    cursor: pointer;
+}
+.icon-hover:hover{
+    color: red;
+}
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(8deg); }
+    50% { transform: rotate(-8deg); }
+}
+
+.card-hover {
+    cursor: pointer;
+}
+.card-hover:hover{
+    transform: scale(1.1);
+    transition:  0.3s ease-in-out;
+}
+.overflow-x-scroll::-webkit-scrollbar{
+    height: 5px;;
+}
+
+.overflow-x-scroll::-webkit-scrollbar-track{
+    background: transparent;
+}
+.overflow-x-scroll::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 251, 255);
+    border-radius: 1rem;
+    border: 0.1rem solid transparent;
+}
+
+.bg-dark{
+    color: white;
+}
+ body{
+    transition: .5s ease-in-out;
+ }
+ .dark{
+    color: white;
+ }
+ 
